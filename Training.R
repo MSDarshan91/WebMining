@@ -3,6 +3,8 @@ library(xts)
 library(dygraphs)
 library(sqldf)
 library(RSNNS)
+setwd(<Working Directory>)
+  load("OneYearTweets.Rdata")
 URL <- "http://ichart.finance.yahoo.com/table.csv?s=^nsei&a=4&b=15&c=2014&d=02&e=1&f=2015"
 dat <- read.csv(URL)
 tim = dat$Date
